@@ -1,7 +1,7 @@
 # atm_interface.py
 
 class ATM:
-    def _init_(self, card_number, pin):
+    def __init__(self, card_number, pin):
         self.card_number = card_number
         self.pin = pin
         self.balance = 1000.0  # initial balance
@@ -77,5 +77,5 @@ def main():
     else:
         print("Authentication failed. Try again!")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
